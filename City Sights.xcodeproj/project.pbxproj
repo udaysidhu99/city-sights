@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		A524BC23299EA10A001652B1 /* City_SightsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524BC22299EA10A001652B1 /* City_SightsApp.swift */; };
-		A524BC25299EA10A001652B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524BC24299EA10A001652B1 /* ContentView.swift */; };
+		A524BC25299EA10A001652B1 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524BC24299EA10A001652B1 /* LaunchView.swift */; };
 		A524BC27299EA10A001652B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A524BC26299EA10A001652B1 /* Assets.xcassets */; };
 		A524BC2A299EA10A001652B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A524BC29299EA10A001652B1 /* Preview Assets.xcassets */; };
+		A524BC34299FE6EE001652B1 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524BC33299FE6EE001652B1 /* ContentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A524BC1F299EA10A001652B1 /* City Sights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City Sights.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A524BC22299EA10A001652B1 /* City_SightsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City_SightsApp.swift; sourceTree = "<group>"; };
-		A524BC24299EA10A001652B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A524BC24299EA10A001652B1 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		A524BC26299EA10A001652B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A524BC29299EA10A001652B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A524BC33299FE6EE001652B1 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +81,7 @@
 		A524BC31299EA457001652B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A524BC24299EA10A001652B1 /* ContentView.swift */,
+				A524BC24299EA10A001652B1 /* LaunchView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -87,6 +89,7 @@
 		A524BC32299EA45F001652B1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A524BC33299FE6EE001652B1 /* ContentModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -161,8 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A524BC25299EA10A001652B1 /* ContentView.swift in Sources */,
+				A524BC25299EA10A001652B1 /* LaunchView.swift in Sources */,
 				A524BC23299EA10A001652B1 /* City_SightsApp.swift in Sources */,
+				A524BC34299FE6EE001652B1 /* ContentModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +298,8 @@
 				DEVELOPMENT_TEAM = NAG9CHUC6L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "City-Sights-Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Grant Location Access";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -323,6 +329,8 @@
 				DEVELOPMENT_TEAM = NAG9CHUC6L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "City-Sights-Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Grant Location Access";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
